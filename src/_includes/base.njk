@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{'css/style.css' | url | safe}}">
+    <link rel="stylesheet" href="{{'css/reset.css' | url | safe}}">
     <title>{{title}}</title>
 </head>
 <body>
-    <h1>Photo</h1>
+    <header>
+        <h1>Photo</h1>
+    </header>
+    
     {{ content | safe }}
 </body>
 </html>
