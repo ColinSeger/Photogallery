@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --watch src/sass:public/css",
-    "build:sass": "sass src/sass:public/css",
     "watch:eleventy": "eleventy --serve",
-    "build:eleventy": "eleventy",
-    "start": "npm-run-all build:sass --parallel watch:* & npm eleventy --serve",
-    "build": "npm-run-all build:*"
+    "watch:sass": "sass --watch src/sass:public/css",
+    "build": "eleventy",
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "start": "npm-run-all build:sass --parallel watch:*"
   },
   "keywords": [],
   "author": "",

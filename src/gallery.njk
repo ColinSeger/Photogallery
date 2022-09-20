@@ -1,0 +1,17 @@
+---
+title: "Photogallery"
+layout: "base.njk"
+---
+
+<section>
+    <h1>Photogallery</h1>
+    <br/>
+    <br/>
+    <p>Here are some photos made by ai.</p>
+    <ul>
+        {% for photo in collections.photos %}
+            <p>A</p>
+            {{ image }}
+        {% endfor %}
+    </ul>
+</section>
