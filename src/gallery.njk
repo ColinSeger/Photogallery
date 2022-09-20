@@ -9,19 +9,14 @@ layout: "base.njk"
     <br/>
     <p>Here are my atempts att geting images to display properly.</p>
     <ul>
-        {% for photo in collections.photos %}
+        {% for photo in collections.all %}
+        <div class="img-container">
             <img src="{{ photo.data.image }}" alt="{{ photo.data.imageAlt }}">
+        </div>
+            
             {{ image }}
         {% endfor %}
     </ul>
-    <div class="img-container">
-        <img src="../../images/foiled-again-foil.gif" alt="Cat">
-    </div>
-    <div class="img-container">
-        <img src="../../images/foiled-again-foil.gif" alt="Cat">
-    </div>
-    <div class="img-container">
-        <img src="../../images/foiled-again-foil.gif" alt="Cat">
-    </div>
+
     
 </section>
