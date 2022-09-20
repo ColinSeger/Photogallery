@@ -3,6 +3,7 @@ $header-color: gray;
 header {
     background-color: $header-color;
     height: 100%;
+    padding: 0.2rem;
 }
 body {
     background-color: $base-color;
@@ -43,6 +44,19 @@ h1 {
     min-width: 10rem;
     height: 100%;
     border-radius: 0.5rem;
+}
+.img-container {
+    width: 20%;
+    height: 35%;
+    background-color: $header-color;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    float: left;
 }
 form {
     margin: 2%;
