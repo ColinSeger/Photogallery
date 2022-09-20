@@ -13,6 +13,7 @@ section {
     background-color: $base-color;
     width: 60%;
     height: 100%;
+    padding: 1rem;
 }
 nav {
     box-sizing: border-box;
@@ -42,4 +43,7 @@ h1 {
     min-width: 10rem;
     height: 100%;
     border-radius: 0.5rem;
+}
+form {
+    margin: 2%;
 }

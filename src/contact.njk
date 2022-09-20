@@ -3,14 +3,21 @@ title: "Photogallery"
 layout: "base.njk"
 ---
 
-<section>
-     Annan inom stora, själv.
-
-Löksås ipsum ordningens därmed i där strand, sällan av dunge samtidigt kunde sitt, nu annat år ser icke. Kan ingalunda kunde lax dimmhöljd hans denna, gamla ingalunda om färdväg häst, brunsås där om vid rännil. Nu för vidsträckt att hwila inom hans samma det göras, räv kan lax sax söka blev räv olika gör, händer mjuka vemod bra vid söka själv gör.
-
-Inom dimmhöljd sig dag samma häst från enligt dunge plats, tidigare annan jäst regn är enligt nya och. Hans när erfarenheter att annan är vi bland fram för genom äng lax händer genom, som räv år vemod tiden blivit erfarenheter annat samtidigt strand denna att. Dag dunge där åker det stig gamla från dag gör, hela när precis samtidigt dag vemod varit tiden det, plats dunge rot björnbär gamla ser annat annan.
-
-I annan tidigare år blivit söka därmed som träutensilierna groda redan, och hwila sjö stora det vemod från jäst kanske, sjö i det tidigare kan verkligen inom själv det. Dimma räv som bra plats samtidigt sax på sax har häst för varit, kunde att fram strand annat redan dimma flera år kanske vad. Denna kanske fram vi bäckasiner har erfarenheter ser från på, hav att från åker enligt samma erfarenheter trevnadens olika, enligt trevnadens tid upprätthållande ska upprätthållande redan tre.
-
-Ska varit vid bäckasiner när ska faktor tiden upprätthållande som, om där flera vemod sista samtidigt regn dimma. Där upprätthållande bland att fram att kanske, sjö hav tid ta tid upprätthållande, stig inom björnbär i bland. 
-</section>
+<form  name="contact" action="/success" method="POST" data-netlify="true">
+  <div>
+    <label  for="yourName">Name</label>
+    </br>
+    <input name="name" type="text" id="yourName" required="true">
+  </div>
+  <div>
+    <label  for="yourEmail">Email</label>
+    </br>
+    <input name="email" type="email"  id="yourEmail" required="true">
+  </div>
+  <div>
+    <label  for="message">Message</label>
+    </br>
+    <textarea name="message" id="message" rows="4" required="true"></textarea>
+  </div>
+    <button  type="submit">Contact</button>
+</form>

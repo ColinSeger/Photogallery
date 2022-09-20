@@ -10,7 +10,7 @@ layout: "base.njk"
     <p>Here are some photos made by ai.</p>
     <ul>
         {% for photo in collections.photos %}
-            <p>A</p>
+            <img src="{{ photo.data.image }}" alt="{{ photo.data.imageAlt }}">
             {{ image }}
         {% endfor %}
     </ul>
