@@ -7,11 +7,12 @@ layout: "base.njk"
     <h1>Photogallery</h1>
     <br/>
     <br/>
-    <p>Here are some photos made by ai.</p>
+    <p>Here are my atempts att geting images to display properly.</p>
     <ul>
         {% for photo in collections.photos %}
             <img src="{{ photo.data.image }}" alt="{{ photo.data.imageAlt }}">
             {{ image }}
         {% endfor %}
     </ul>
+    <img src="../../images/foiled-again-foil.gif" alt="Cat">
 </section>
