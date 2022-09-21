@@ -1,7 +1,5 @@
 ---
 title: This is a pug
-image: /images/pug.jpg
+image: /images/pug.jpeg
 imageAlt: "Screenshots of catch up app"
 ---
-
-<img src="../../images/pug.jpg" alt="Cat">

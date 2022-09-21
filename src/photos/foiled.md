@@ -1,6 +1,6 @@
 ---
 title: Kebab cat
-image: /images/foiled-again-foil.gif
+image: /images/kebab-cat.jpeg
 imageAlt: "Screenshots of catch up app"
 ---
 

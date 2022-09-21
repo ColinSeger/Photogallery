@@ -8,7 +8,7 @@ header {
 body {
     background-color: $base-color;
     display: grid;
-    grid-template-rows: 8rem 10rem;
+    grid-template-rows: 8rem 8rem 100%;
 }
 section {
     background-color: $base-color;
@@ -20,6 +20,9 @@ h1 {
     display: inline;
     box-sizing: border-box;
     font-weight: 400;
+    max-height: 2rem;
+    margin: 0.5rem;
+    margin-top: 0;
 }
 .button {
     color: black;
@@ -40,16 +43,22 @@ h1 {
     transition: 200ms;
 }
 .img-container {
-    min-width: 12rem;
-    min-height: 12rem;
-    width: 15rem;
-    height: 20rem;
+    min-width: 15rem;
+    min-height: 15rem;
+    width: 23%;
+    height: 28%;
     background-color: $header-color;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1%;
     border-radius: 0.5rem;
     box-sizing: border-box;
     float: left;
+    transition: 200ms;
+}
+.img-click {
+    white-space: pre;
+    width: 46%;
+    height: 58%;
 }
 img {
     min-height: 90%;
@@ -57,7 +66,7 @@ img {
     min-width: 100%;
 }
 form {
-    width: 20%;
+    width: 22rem;
     align-self: center;
     align-content: center;
     background-color: $header-color;
@@ -72,7 +81,7 @@ form {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    float: left;
+    grid-row: 3/3;
 }
 .fill-form {
     margin: 1.9rem;
@@ -96,6 +105,7 @@ nav {
     }
     section {
         grid-row: 3/4;
+        width: 100%;
     }
 }
 @media (min-width: 75rem) {
@@ -107,5 +117,8 @@ nav {
     }
     header {
         height: 100%;
+    }
+    section {
+        grid-row: 2/5;
     }
 }
