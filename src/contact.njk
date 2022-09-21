@@ -3,21 +3,23 @@ title: "Photogallery"
 layout: "base.njk"
 ---
 
-<form  name="contact" action="/success" method="POST" data-netlify="true">
-  <div>
-    <label  for="yourName">Name</label>
-    </br>
-    <input name="name" type="text" id="yourName" required="true">
-  </div>
-  <div>
-    <label  for="yourEmail">Email</label>
-    </br>
-    <input name="email" type="email"  id="yourEmail" required="true">
-  </div>
-  <div>
-    <label  for="message">Message</label>
-    </br>
-    <textarea name="message" id="message" rows="4" required="true"></textarea>
-  </div>
-    <button  type="submit">Contact</button>
-</form>
+<div class="form-container">  
+  <form  name="contact" action="" method="POST" data-netlify="true">
+    <div class="fill-form">
+      <label  for="yourName">Name</label>
+      </br>
+      <input name="name" type="text" id="yourName" required="true">
+    </div>
+    <div class="fill-form">
+      <label  for="yourEmail">Email</label>
+      </br>
+      <input name="email" type="email"  id="yourEmail" required="true">
+    </div>
+    <div class="fill-form">
+      <label  for="message">Message</label>
+      </br>
+      <textarea name="message" id="message" rows="4" required="true"></textarea>
+    </div>
+      <button  type="submit">Contact</button>
+  </form>
+</div>

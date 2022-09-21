@@ -1,5 +1,5 @@
 ---
-title: This is a pug
+title: Another pug
 image: /images/pug.jpg
 imageAlt: "Screenshots of catch up app"
 ---
