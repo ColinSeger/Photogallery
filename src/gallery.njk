@@ -9,12 +9,10 @@ layout: "base.njk"
     <br/>
     <p>Here are my atempts att geting images to display properly.</p>
     <ul>
-        {% for photo in collections.all %}
+        {% for photo in collections.photo %}
         <div class="img-container">
             <img src="{{ photo.data.image }}" alt="{{ photo.data.imageAlt }}">
         </div>
-            
-            {{ image }}
         {% endfor %}
     </ul>
 
