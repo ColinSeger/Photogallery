@@ -6,7 +6,8 @@
   "scripts": {
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "sass --watch src/sass:public/css",
-    "build": "eleventy",
+    "build:eleventy": "eleventy",
+    "build": "npm-run-all build:sass build:eleventy",
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "start": "npm-run-all build:sass --parallel watch:*"
   },
