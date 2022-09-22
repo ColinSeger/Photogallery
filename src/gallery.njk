@@ -9,11 +9,11 @@ layout: "base.njk"
     <br/>
     <p>Here are my atempts att geting images to display properly.</p>
     <ul>
-        {% for photo in collections.photo %}
+        {% asyncEach image in images %}
         <div class="img-container">
-            <h1>{{ photo.data.title }}</h1>
-            <img src="{{ photo.data.image }}" alt="{{ photo.data.imageAlt }}">
+            <h1>{{ image.title }}</h1>
+            <img src="{{ image.image }}" alt="{{ image.imageAlt }}">
         </div>
-        {% endfor %}
+        {% endeach %}
     </ul>
 </section>

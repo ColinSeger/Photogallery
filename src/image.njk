@@ -1,0 +1,9 @@
+{# ---
+pagination:
+    data: images
+    size: 1
+    alias: image
+permalink: "gallery/image/{{ image | imageUrl | slug }}/"
+---
+
+{{ image | dump }} #}
