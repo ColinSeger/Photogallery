@@ -1,4 +1,7 @@
 $( document.body ).ready(function() {
+    $(".background-shade").click(function() {
+        //TODO: exit shade/image when clicked
+    });
     $(".img-container").click(function(){
         $(".img-click").css({
             "opacity": "0",

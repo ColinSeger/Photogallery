@@ -42,7 +42,7 @@ h1 {
     border-radius: 0.5rem;
     transition: 200ms;
 }
-.img-container {
+.img-container { //TODO reduce radius? add shadow
     min-width: 15rem;
     min-height: 15rem;
     width: 23%;
@@ -92,7 +92,7 @@ h1 {
     max-height: 90%;
     visibility: visible;
 }
-.image-title {
+.image-title {//TODO improve looks of this
     font-size: 120%;
     font-weight: 400;
     margin: 0;
