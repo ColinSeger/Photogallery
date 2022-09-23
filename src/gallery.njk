@@ -11,11 +11,17 @@ layout: "base.njk"
     <ul>
         {% asyncEach image in images %}
         <div class="img-container">
-            <h1>{{ image.title }}</h1>
+            <h1 class="image-title">{{ image.title }}</h1>
+            <br/>
             <img src="{{ image.image }}" alt="{{ image.imageAlt }}">
             <div class="img-click">
                 <h1>{{ image.title }}</h1>
+                <br/>
+                <br/>
                 <img src="{{ image.image }}" alt="{{ image.imageAlt }}">
+                <p>
+                    {{ image.description }}
+                </p>
             </div>
         </div>
         
