@@ -9,11 +9,15 @@ layout: "base.njk"
     <br/>
     <p>Here are my atempts att geting images to display properly.</p>
     <ul>
+        <div class="background-shade"></div>
         {% asyncEach image in images %}
         <div class="img-container">
             <h1 class="image-title">{{ image.title }}</h1>
             <br/>
-            <img src="{{ image.image }}" alt="{{ image.imageAlt }}">
+            <div class="display-image" style="background-image: url({{ image.image }});">
+
+            </div>
+            {# <img src="{{ image.image }}" alt="{{ image.imageAlt }}"> #}
             <div class="img-click">
                 <h1>{{ image.title }}</h1>
                 <br/>

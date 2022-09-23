@@ -11,7 +11,12 @@ $( document.body ).ready(function() {
                 "opacity": "1",
                 "transform": "scale(1)",
                 "visibillity": "visible",
-                "z-index": "90"
+                "z-index": "90",
+                "top": "50%",
+                "left": "50%"
+            });
+            $(".background-shade").css({
+                "visibility": "visible"
             });
         }
         else{           
@@ -19,6 +24,9 @@ $( document.body ).ready(function() {
                 "opacity": "0",
                 "transform": "scale(0)",
                 "visibillity": "hidden"
+            });
+            $(".background-shade").css({
+                "visibility": "hidden"
             });
         }
     })
