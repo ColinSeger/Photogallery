@@ -56,9 +56,21 @@ h1 {
     transition: 200ms;
 }
 .img-click {
-    white-space: pre;
-    width: 46%;
-    height: 58%;
+    top: 50%;
+    left: 50%;
+    $width: 40vw;
+    $height: 55vh;
+    width: $width;
+    height: $height;
+    background-color: $header-color;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: 200ms;
+    position: fixed;
+    opacity: 0;
+    transform: scale(0);
+    margin-left: - calc($width / 2);
+    margin-top: - calc($height / 2);
 }
 img {
     min-height: 90%;
