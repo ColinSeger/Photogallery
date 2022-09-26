@@ -23,9 +23,7 @@ $( document.body ).ready(function() {
                 "opacity": "1",
                 "transform": "scale(1)",
                 "visibillity": "visible",
-                "z-index": "90",
-                "top": "50%",
-                "left": "50%"
+                "z-index": "90"
             });
             $(".background-shade").css({
                 "opacity": "0.7",

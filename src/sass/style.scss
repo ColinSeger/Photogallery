@@ -76,8 +76,8 @@ h1 {
     background-color: $header-color;
 }
 .img-click {
-    // top: 50%;
-    // left: 50%;
+    top: 50%;
+    left: 50%;
     $width: 40vw;
     $height: 55vh;
     width: $width;
@@ -158,6 +158,26 @@ nav {
     section {
         grid-row: 3/4;
         width: 100%;
+    }
+    .img-container {
+        float: left;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+    .img-click {
+        left: 0;
+        top: 0;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    ul {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
 @media (min-width: 75rem) {
