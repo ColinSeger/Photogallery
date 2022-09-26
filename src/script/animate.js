@@ -28,7 +28,7 @@ $( document.body ).ready(function() {
                 "left": "50%"
             });
             $(".background-shade").css({
-                "opacity": "0.5",
+                "opacity": "0.7",
                 "visibility": "visible"
             });
         }

@@ -1,5 +1,6 @@
 $base-color: gainsboro;
 $header-color: gray;
+$radius: 0.5rem;
 header {
     background-color: $header-color;
     height: 100%;
@@ -16,6 +17,9 @@ section {
     padding: 1rem;
 }
 h1 {
+    max-height: 2rem;
+}
+.header-title {
     float: left;
     display: inline;
     box-sizing: border-box;
@@ -39,8 +43,15 @@ h1 {
     width: 20%;
     min-width: 8rem;
     height: 4rem;
-    border-radius: 0.5rem;
+    border-radius: $radius;
     transition: 200ms;
+}
+.image-head {
+    width: 100%;
+    height: 10%;
+    min-height: 2rem;
+    border-radius: $radius;
+    background-color: $header-color;
 }
 .img-container { //TODO reduce radius? add shadow
     min-width: 15rem;
@@ -49,11 +60,20 @@ h1 {
     height: 45vh;
     background-color: $header-color;
     margin: 1%;
+    margin-bottom: 3rem;
     padding-top: 0.1rem;
-    border-radius: 0.5rem;
+    border-radius: $radius;
     box-sizing: border-box;
     float: left;
     transition: 200ms;
+}
+.image-footer {
+    width: 100%;
+    height: 10%;
+    border-radius: $radius;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-color: $header-color;
 }
 .img-click {
     // top: 50%;
@@ -64,7 +84,7 @@ h1 {
     height: $height;
     background-color: $header-color;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: $radius;
     transition: 200ms;
     position: fixed;
     opacity: 0;
@@ -92,25 +112,24 @@ h1 {
     max-height: 90%;
     visibility: visible;
 }
-.image-title {//TODO improve looks of this
-    font-size: 120%;
-    font-weight: 400;
-    margin: 0;
-    height: 10%;
-    width: 100%;
-}
+// .image-title {//TODO improve looks of this
+//     font-size: 120%;
+//     font-weight: 400;
+//     height: 10%;
+//     width: 100%;
+// }
 form {
     width: 22rem;
     align-self: center;
     align-content: center;
     background-color: $header-color;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: $radius;
 }
 .form-container {
     width: 100%;
     height: 100%;
-    border-radius: 0.5rem;
+    border-radius: $radius;
     display: flex;
     justify-content: center;
     align-items: center;
