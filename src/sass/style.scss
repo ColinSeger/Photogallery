@@ -1,6 +1,9 @@
 $base-color: gainsboro;
 $header-color: gray;
 $radius: 0.5rem;
+$image-container-width: 40vw;
+$image-container-height: 55vh;
+
 header {
     background-color: $header-color;
     height: 100%;
@@ -78,10 +81,8 @@ h1 {
 .img-click {
     top: 50%;
     left: 50%;
-    $width: 40vw;
-    $height: 55vh;
-    width: $width;
-    height: $height;
+    width: $image-container-width;
+    height: $image-container-height;
     background-color: $header-color;
     padding: 1rem;
     border-radius: $radius;
@@ -89,8 +90,8 @@ h1 {
     position: fixed;
     opacity: 0;
     transform: scale(0);
-    margin-left: - calc($width / 2);
-    margin-top: - calc($height / 2);
+    margin-left: - calc($image-container-width / 2);
+    margin-top: - calc($image-container-height / 2);
 }
 .background-shade {
     opacity: 0.5;
@@ -112,32 +113,39 @@ h1 {
     max-height: 90%;
     visibility: visible;
 }
-// .image-title {//TODO improve looks of this
-//     font-size: 120%;
-//     font-weight: 400;
-//     height: 10%;
-//     width: 100%;
-// }
 form {
     width: 22rem;
     align-self: center;
     align-content: center;
     background-color: $header-color;
     padding: 1rem;
+    margin-top: 5rem;
     border-radius: $radius;
+    transition: 200ms;
 }
 .form-container {
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    $width: 40vw;
+    $height: 55vh;
+    width: $width;
+    height: $height;
     border-radius: $radius;
     display: flex;
+    position: fixed;
     justify-content: center;
-    align-items: center;
     box-sizing: border-box;
-    grid-row: 3/3;
+    margin-left: - calc($width / 2);
+    margin-top: - calc($height / 2);
+    transition: 200ms;
 }
 .fill-form {
     margin: 1.9rem;
+}
+button {
+    margin-top: 0;
+    margin-left: 1.9rem;
+    margin-bottom: 0.5rem;
 }
 nav {
     box-sizing: border-box;
@@ -166,18 +174,32 @@ nav {
         margin-bottom: 3rem;
     }
     .img-click {
-        left: 0;
-        top: 0;
         margin-left: 0;
         margin-top: 0;
-        width: 100vw;
-        height: 100vh;
+        $width-on-phone: 90vw;
+        $height-on-phone: 70vh;
+        width: $width-on-phone;
+        height: $height-on-phone;
+        margin-left: - calc($width-on-phone / 2);
+        margin-top: - calc($height-on-phone / 2);
     }
     ul {
         float: left;
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+    form {
+        width: 100%;
+        border-radius: 0;
+    }
+    .form-container {
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        margin-top: 0;
+        position: relative;
+        width: 100%;
     }
 }
 @media (min-width: 75rem) {
