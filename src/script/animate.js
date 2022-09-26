@@ -1,6 +1,15 @@
 $( document.body ).ready(function() {
     $(".background-shade").click(function() {
         //TODO: exit shade/image when clicked
+        $(".background-shade").css({
+            "opacity": "0",
+            "visibility": "hidden"
+        });
+        $(".img-click").css({
+            "opacity": "0",
+            "transform": "scale(0)",
+            "visibillity": "hidden"
+        });
     });
     $(".img-container").click(function(){
         $(".img-click").css({
@@ -19,6 +28,7 @@ $( document.body ).ready(function() {
                 "left": "50%"
             });
             $(".background-shade").css({
+                "opacity": "0.5",
                 "visibility": "visible"
             });
         }
@@ -29,6 +39,7 @@ $( document.body ).ready(function() {
                 "visibillity": "hidden"
             });
             $(".background-shade").css({
+                "opacity": "0",
                 "visibility": "hidden"
             });
         }
