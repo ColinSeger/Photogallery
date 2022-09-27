@@ -1,6 +1,11 @@
+//The two temporary colors used in this demo
 $base-color: gainsboro;
 $header-color: gray;
+
+//Sets the radius of most corners
 $radius: 0.5rem;
+
+//This controls the size of the image container
 $image-container-width: 40vw;
 $image-container-height: 55vh;
 
@@ -98,8 +103,8 @@ h1 {
     opacity: 0.5;
     background-color: black;
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 150vw;
+    height: 150vh;
     top: 0;
     left: 0;
     visibility: hidden;
