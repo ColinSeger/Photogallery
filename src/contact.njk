@@ -3,25 +3,36 @@ title: "Photogallery"
 layout: "base.njk"
 ---
 
+{# The container holding the form #}
 <div class="form-container">  
   
+  {# The form for contacting #}
   <form  name="contact" action="" method="POST" data-netlify="true">
     <h1>Contact us</h1>
+    
+    {# Where you input name #}
     <div class="fill-form">
       <label  for="yourName">Name</label>
       </br>
       <input name="name" type="text" id="yourName" required="true">
     </div>
+
+    {# Where you input email #}
     <div class="fill-form">
       <label  for="yourEmail">Email</label>
       </br>
       <input name="email" type="email"  id="yourEmail" required="true">
     </div>
+
+    {# Where you input message #}
     <div class="fill-form">
       <label  for="message">Message</label>
       </br>
       <textarea name="message" id="message" rows="4" required="true"></textarea>
     </div>
-      <button type="submit">Contact</button>
+    
+    {# Send message #}
+    <button type="submit">Contact</button>
+    
   </form>
 </div>

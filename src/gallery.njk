@@ -7,25 +7,36 @@ layout: "base.njk"
     <h1>Photogallery</h1>
     <p>Here are my atempts at getting images to display properly.</p>
     <ul>
+        {# This dimms the background when you click a image #}
         <div class="background-shade"></div>
+
+        {# This each method gets all the data out of -data/images #}
         {% asyncEach image in images %}
         <div class="img-container">
+
+            {# The title of the image #}
             <div class="image-head">
                 <h1 class="image-title">{{ image.title }}</h1>
             </div>
             
-            <div class="display-image" style="background-image: url({{ image.image }});">
+            {# This is the image being displayed when scrolling the gallery #}
+            <div class="display-image" style="background-image: url({{ image.image }});"></div>
 
-            </div>
-            <div class="image-footer">
-
-            </div>
-            {# <img src="{{ image.image }}" alt="{{ image.imageAlt }}"> #}
+            {# This is the underside of image container #}
+            <div class="image-footer"></div>
+            
+            {# This div is the lightbox when you click on a image #}
             <div class="img-click">
+
+                {# This is the title of the image when in lightbox #}
                 <div class="image-head">
                     <h1 class="image-title">{{ image.title }}</h1>
                 </div>
+
+                {# This is the image being displayed when in the lightbox #}
                 <img src="{{ image.image }}" alt="{{ image.imageAlt }}">
+
+                {# This is where the image description goes #}
                 <p class="imgDescript">
                     {{ image.description }}
                 </p>

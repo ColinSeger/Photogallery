@@ -154,6 +154,9 @@ form {
 .fill-form {
     margin: 1.9rem;
 }
+textarea {
+    max-width: 100%;
+}
 button {
     margin-top: 0;
     margin-left: 1.9rem;
