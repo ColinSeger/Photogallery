@@ -22,9 +22,11 @@ layout: "base.njk"
             </div>
             {# <img src="{{ image.image }}" alt="{{ image.imageAlt }}"> #}
             <div class="img-click">
-                <h1>{{ image.title }}</h1>
+                <div class="image-head">
+                    <h1 class="image-title">{{ image.title }}</h1>
+                </div>
                 <img src="{{ image.image }}" alt="{{ image.imageAlt }}">
-                <p>
+                <p class="imgDescript">
                     {{ image.description }}
                 </p>
             </div>
