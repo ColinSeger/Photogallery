@@ -1,6 +1,13 @@
 //The two temporary colors used in this demo
-$base-color: gainsboro;
-$header-color: gray;
+//$base-color: gainsboro;
+//$header-color: gray;
+
+//New trial colors
+$base-color: white;
+$header-color: black;
+$another-color: gray;
+$another-color-shadow: gainsboro;
+$button-color: gainsboro;
 
 //Sets the radius of most corners
 $radius: 0.5rem;
@@ -11,16 +18,20 @@ $image-container-height: 55vh;
 
 header {
     background-color: $header-color;
+    //background: linear-gradient(348deg, $base-color 25%, $header-color 81%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 13%);
     height: 100%;
     padding: 0.2rem;
+    color: white;
+    //box-shadow: var(--shadow-elevation-high);
 }
 body {
-    background-color: $base-color;
+    background-color: $another-color;
+    background: linear-gradient(348deg, $another-color-shadow 25%, $another-color 81%);
     display: grid;
     grid-template-rows: 8rem 8rem 100%;
 }
 section {
-    background-color: $base-color;
     width: 60%;
     padding: 1rem;
 }
@@ -38,7 +49,7 @@ h1 {
 }
 .button {
     color: black;
-    background-color: $base-color;
+    background-color: $button-color;
     border: none;
     text-align: center;
     text-decoration: none;
@@ -65,6 +76,7 @@ h1 {
 }
 //This is the container for the image
 .img-container {
+    color: white;
     min-width: 20rem;
     min-height: 20rem;
     width: 23%;
@@ -238,23 +250,23 @@ nav {
     }
 }
 :root {
-    --shadow-color: 45deg 3% 46%;
+    --shadow-color: 175deg 100% 1%;
     --shadow-elevation-low:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-      0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
-      1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
+      -0.6px 0.7px 1px hsl(var(--shadow-color) / 0.34),
+      -1px 1.2px 1.8px -1.2px hsl(var(--shadow-color) / 0.34),
+      -2.4px 2.8px 4.1px -2.5px hsl(var(--shadow-color) / 0.34);
     --shadow-elevation-medium:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
-      0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
-      2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
-      5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+      -0.6px 0.7px 1px hsl(var(--shadow-color) / 0.36),
+      -2px 2.3px 3.4px -0.8px hsl(var(--shadow-color) / 0.36),
+      -4.9px 5.8px 8.5px -1.7px hsl(var(--shadow-color) / 0.36),
+      -12.1px 14.2px 21px -2.5px hsl(var(--shadow-color) / 0.36);
     --shadow-elevation-high:
-      0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-      1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
-      2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
-      4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
-      7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
-      11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
-      17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
-      25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
+      -0.6px 0.7px 1px hsl(var(--shadow-color) / 0.34),
+      -3.5px 4.2px 6.2px -0.4px hsl(var(--shadow-color) / 0.34),
+      -6.6px 7.8px 11.5px -0.7px hsl(var(--shadow-color) / 0.34),
+      -10.8px 12.7px 18.8px -1.1px hsl(var(--shadow-color) / 0.34),
+      -17.2px 20.3px 29.9px -1.4px hsl(var(--shadow-color) / 0.34),
+      -26.9px 31.8px 46.9px -1.8px hsl(var(--shadow-color) / 0.34),
+      -40.9px 48.3px 71.2px -2.1px hsl(var(--shadow-color) / 0.34),
+      -60.3px 71.2px 105px -2.5px hsl(var(--shadow-color) / 0.34);
   }
