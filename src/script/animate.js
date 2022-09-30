@@ -61,4 +61,16 @@ $( document.body ).ready(function() {
             });
         }
     })
+    $(".close").hover(function(){
+        $(this).css({
+            "transform": "scale(1.3)",
+            "border" : "1px solid rgba(0, 0, 0, 1)"
+        });
+    });
+    $(".close").mouseleave(function(){
+        $(this).css({
+            "transform": "scale(1)",
+            "border" : "0px solid rgba(0, 0, 0, 0)"
+        });
+    });
 });

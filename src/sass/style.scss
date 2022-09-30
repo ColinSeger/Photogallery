@@ -4,10 +4,14 @@
 
 //New trial colors
 $base-color: white;
-$header-color: black;
-$another-color: gray;
-$another-color-shadow: gainsboro;
-$button-color: gainsboro;
+$header-color: #14213D;
+$another-color: #E5E5E5;
+$another-color-shadow: #FFFFFF;
+$button-color: #FCA311;
+
+//Text colors
+$dark-background-text-color: #FCA311;
+$light-background-text-color: black;
 
 //Sets the radius of most corners
 $radius: 0.5rem;
@@ -19,10 +23,10 @@ $image-container-height: 55vh;
 header {
     background-color: $header-color;
     //background: linear-gradient(348deg, $base-color 25%, $header-color 81%);
-    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 13%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, $header-color 13%);
     height: 100%;
     padding: 0.2rem;
-    color: white;
+    color: $dark-background-text-color;
     //box-shadow: var(--shadow-elevation-high);
 }
 body {
@@ -76,7 +80,7 @@ h1 {
 }
 //This is the container for the image
 .img-container {
-    color: white;
+    color: $dark-background-text-color;
     min-width: 20rem;
     min-height: 20rem;
     width: 23%;
@@ -139,10 +143,21 @@ h1 {
 img {
     max-height: 80%;
 }
+.image-title {
+    display: inline;
+}
 .imgDescript {
     max-height: 10%;
 }
+.close {
+    display: inline;
+    float: right;
+    max-width: 5rem;
+    transition: 100ms;
+    border-radius: $radius;
+}
 form {
+    color: $dark-background-text-color;
     width: 22rem;
     align-self: center;
     align-content: center;

@@ -31,10 +31,13 @@ layout: "base.njk"
                 {# This is the title of the image when in lightbox #}
                 <div class="image-head">
                     <h1 class="image-title">{{ image.title }}</h1>
+                     <img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/x-512.png" alt="close" class="close">
                 </div>
 
                 {# This is the image being displayed when in the lightbox #}
                 <img src="{{ image.image }}" alt="{{ image.imageAlt }}">
+                
+               
 
                 {# This is where the image description goes #}
                 <p class="imgDescript">
